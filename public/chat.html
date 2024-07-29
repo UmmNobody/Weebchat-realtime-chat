@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WeebChat_ChatRoom</title>
+</head>
+<body>
+    
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Weeb Chat</h1>
+            <a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+        </header>
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3><i class="fa fa-commenting" aria-hidden="true"></i>  Room Name</h3>
+                <h2 id="room-name"></h2>
+                <h3><i class="fa fa-users" aria-hidden="true"></i> Users</h3>
+                <ul id="users"></ul>
+            </div>
+            <div class="chat-message"></div>
+        </main>
+        <div class="chat-input">
+            <form id="chat-form">
+                <input type="text" id="msg" placeholder="Enter message!!" autocomplete="off">
+                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.12.3/qs.min.js" integrity="sha512-44BDaDSsjSe2hSjVA42JrU77ADA4Uzcl3ZJq6tR+9Q1zA0e428UYZKdg9L7f8OFtj0SMdKv7ZCeJWNkgxiDAFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
