@@ -6,7 +6,8 @@ body {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,.7), rgba(0,0,0,.2)), url(rickroll.png);
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,.4), rgba(0,0,0,.2)), url(rickroll.png);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,7 +27,6 @@ li {
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     border-radius: 10px;
     padding: 20px;
-    margin-right: 40%
 }
 
 .log-head {
@@ -208,7 +208,6 @@ li {
 .chat-sidebar {
     border-right: 3px solid #fff;
     padding: 20px 20px 60px;
-    overflow-y: scroll;
 }
 
 .chat-sidebar h3 {
@@ -265,4 +264,23 @@ li {
 .message .text {
     font-size: 14px;
     color: #e4e4e4;
+}
+
+@media screen and (max-width: 600px){
+    .chat-input input {
+        width: 70%;
+    }
+
+    .chat-sidebar{
+        padding: 10px 10px 30px;
+    }
+    .chat-sidebar h3 {
+        font-size: 15px;
+    }
+    .chat-sidebar h2 {
+        font-size: 15px;
+    }
+    body {
+        background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,.4), rgba(0,0,0,.2)), url(rickroll-res.png);
+    }
 }
