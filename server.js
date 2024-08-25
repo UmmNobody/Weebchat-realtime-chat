@@ -51,8 +51,8 @@ io.on('connection', socket => {
             // Send users and room info
         io.to(user.team).emit('teamUsers', {
             room: user.team,
-            users: getCurrentUser(user.team)
-        })
+            users: getTeamUser(user.team)
+        });
         }
     });
 });
